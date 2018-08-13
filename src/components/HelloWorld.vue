@@ -19,32 +19,32 @@ export default {
     return {
       counter: 0,
       multiplier: 5
-    };
+    }
   },
   methods: {
     increment(){
-      this.counter++;
+      this.counter++
     },
     decrement(){
-      this.counter--;
+      this.counter--
     }
   },
   computed: {
-    recalculate(){
-      return ( this.counter * this.multiplier);
+    recalculate () {
+      return ( this.counter * this.multiplier)
     },
-    notCovered(){
-      return (this.counter * 10);
+    notCovered () {
+      return (this.counter * 10)
     }
   },
   props: {
     msg: String
-  },
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped>
 h3 {
   margin: 40px 0 0;
 }
