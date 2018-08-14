@@ -20,5 +20,13 @@ module.exports = {
     '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
   ],
   collectCoverage: true,
+  'coverageThreshold': {
+    'global': {
+      'branches': 70,
+      'functions': 70,
+      'lines': 80,
+      'statements': 70
+    }
+  },
   testURL: 'http://localhost/'
 }

@@ -2,7 +2,6 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div><span>Total: {{ recalculate }}</span></div>
-    <div><span>Total: {{ notCovered }}</span></div>
     <div><span>Counter: {{ counter }}</span></div>
     <button id="decButton" @click="decrement()">Decrement</button>
     <button id="incButton" @click="increment()">Increment</button>
@@ -32,9 +31,6 @@ export default {
   computed: {
     recalculate () {
       return ( this.counter * this.multiplier)
-    },
-    notCovered () {
-      return (this.counter * 10)
     }
   },
   props: {

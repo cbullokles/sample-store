@@ -10,13 +10,6 @@ describe('HelloWorld.vue', () => {
     expect(wrapper.text()).toMatch(msg)
   })
 
-  it('check counter after click', () => {
-    const wrapper = shallowMount(HelloWorld)
-    expect(wrapper.vm.counter).toBe(0)
-    wrapper.find('#decButton').trigger('click')
-    expect(wrapper.vm.counter).toBe(-1)
-  })
-
   it('check increment method', () => {
     const wrapper = shallowMount(HelloWorld)
     wrapper.vm.increment()
@@ -26,8 +19,6 @@ describe('HelloWorld.vue', () => {
   it('check computed method', () => {
     const wrapper = shallowMount(HelloWorld)
     wrapper.vm.increment()
-    wrapper.vm.increment()
-    expect(wrapper.vm.recalculate).toBe(10)
+    expect(wrapper.vm.recalculate).toBe(5)
   })
-
 })
