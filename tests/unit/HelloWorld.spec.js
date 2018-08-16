@@ -15,6 +15,12 @@ describe('HelloWorld.vue', () => {
     wrapper.vm.increment()
     expect(wrapper.vm.counter).toBe(1)
   })
+
+  it('check decrement method', () => {
+    const wrapper = shallowMount(HelloWorld)
+    wrapper.vm.decrement()
+    expect(wrapper.vm.counter).toBe(-1)
+  })
   it('check computed method', () => {
     const wrapper = shallowMount(HelloWorld)
     wrapper.vm.increment()
