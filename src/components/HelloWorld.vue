@@ -14,23 +14,23 @@
 <script>
 export default {
   name: 'HelloWorld',
-  data()  {
+  data () {
     return {
       counter: 0,
       multiplier: 5
     }
   },
   methods: {
-    increment(){
+    increment () {
       this.counter++
     },
-    decrement(){
+    decrement () {
       this.counter--
     }
   },
   computed: {
     recalculate () {
-      return ( this.counter * this.multiplier)
+      return (this.counter * this.multiplier)
     }
   },
   props: {
